@@ -3,9 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Community Resource Hub</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>[Your Community Name] Resource Hub</h1>
+        <p>Your guide to local non-profits, events, and support services.</p>
+    </header>
+
+    <main>
+        <!-- Highlight Section -->
+        <section class="highlight-section">
+            <h2>Featured Resources</h2>
+            <!-- Highlighted resources will be populated here with HTML -->
+            <div class="highlight-cards-container">
+                <!-- Example of a single highlight card -->
+                <div class="highlight-card">
+                    <h3>[Resource Name 1]</h3>
+                    <p>[Short description of resource 1.]</p>
+                    <a href="#directory" class="button">Learn More</a>
+                </div>
+                <div class="highlight-card">
+                    <h3>[Resource Name 2]</h3>
+                    <p>[Short description of resource 2.]</p>
+                    <a href="#directory" class="button">Learn More</a>
+                </div>
+                <div class="highlight-card">
+                    <h3>[Resource Name 3]</h3>
+                    <p>[Short description of resource 3.]</p>
+                    <a href="#directory" class="button">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Directory Section -->
+        <section id="directory" class="directory-section">
+            <h2>Community Resource Directory</h2>
+            <div class="search-filter-container">
+                <input type="text" id="search-bar" placeholder="Search resources...">
+                <select id="filter-dropdown">
+                    <option value="all">All Categories</option>
+                    <!-- Categories will be populated here -->
+                </select>
+            </div>
+            <div id="resource-list" class="resource-cards-container">
+                <!-- Resources will be dynamically populated here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Submission Form Section -->
+        <section class="submission-form-section">
+            <h2>Suggest a New Resource</h2>
+            <p>Know of a resource we're missing? Fill out the form below to let us know!</p>
+            <form id="resource-form">
+                <label for="resource-name">Resource Name:</label>
+                <input type="text" id="resource-name" name="resource-name" required>
+
+                <label for="resource-description">Description:</label>
+                <textarea id="resource-description" name="resource-description" required></textarea>
+
+                <label for="resource-category">Category:</label>
+                <select id="resource-category" name="resource-category" required>
+                    <option value="">Select a category</option>
+                    <option value="non-profits">Non-profits</option>
+                    <option value="support-services">Support Services</option>
+                    <option value="events">Events & Programs</option>
+                </select>
+
+                <label for="resource-contact">Contact Information (website or email):</label>
+                <input type="text" id="resource-contact" name="resource-contact">
+
+                <button type="submit">Submit Resource</button>
+            </form>
+        </section>
+
+        <!-- Additional Content (Example) -->
+        <section class="additional-content">
+            <h2>About Our Hub</h2>
+            <p>The [Your Community Name] Resource Hub is a centralized online tool to help residents connect with important local services and organizations. Our goal is to empower residents by making information easily accessible and promoting community engagement.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 [Your School/Chapter Name]. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
